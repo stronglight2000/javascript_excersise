@@ -120,9 +120,9 @@ const addTodo = () => {
     inputTodo.value = ""; // Xóa nội dung input
 }
 
-// Lắng nghe sự kiện khi click vào nút "Add"
+// Lắng nghe sự kiện khi click vào nút Add
 document.getElementById("btn-add").addEventListener("click", addTodo);
-// Lắng nghe sự kiện khi nhấn phím "Enter" trong ô input
+// Lắng nghe sự kiện khi nhấn Enter trong ô input
 document.getElementById("input-todo").addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
         addTodo();
